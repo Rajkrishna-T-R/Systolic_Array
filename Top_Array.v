@@ -53,7 +53,7 @@ module Top_Array#(parameter data_width=32,parameter dims=2)(
                                     (.in_west(West[i][j]),
                                      .in_north(North[i][j]),
                                      .clk(clk),
-                                     .rst(rst_bar),
+                                     .rst_bar(rst_bar),
                                      .result(Result[i][j]),
                                      .out_east(West[i][j+1]),   
                                      // j+1 -> N th east_out need N+1 th j wire
