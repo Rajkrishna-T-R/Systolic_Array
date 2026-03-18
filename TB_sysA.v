@@ -61,8 +61,7 @@ module TB_sysA;
     integer j,k;
   
     initial begin
-        // 1. Load data from files into internal simulation buffers
-        // We use a temporary flat array because $readmemh doesn't like 2D arrays directly
+     
         begin : loading_logic
             reg [DATA_WIDTH-1:0] temp_A [0:DIMS*DIMS-1];
             reg [DATA_WIDTH-1:0] temp_B [0:DIMS*DIMS-1];
@@ -95,6 +94,7 @@ module TB_sysA;
 
 integer row;
 integer col; 
+
 // ROW and COLUMN 
 
  
